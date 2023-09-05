@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,700;1,9..40,300;1,9..40,400&family=Forum&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Tangerine:wght@700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+body{
+    font-family: 'Forum', cursive;
+    font-size: large;
+    font-weight: 200;
+    background-color: #fdf9f9;
+    height: 100vh;
+    color: black;
+}
+section{
+    padding: 2rem 9%;
+    background-color: #fdf9f9;
+}
+section:nth-child(even){
+    background: #fdf9f9;
+}
+
+/* *************************HEADER SECTION************* */
+header{
+    background-color: white;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
+    width: 100%;
+}
+header .food{
+    font-size: 35px;
+    color: rgb(82, 122, 82);
+    font-weight: 800
+}
+header .food a{
+    font-family: cursive;
+}
+header .menu{
+    display: inline-block;
+    margin: 0 90px;
+}
+header .menu a{
+     position: relative;  
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.5px; 
+    z-index: 3; 
+    padding: 0 10px;
+}
+header .menu a::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(224, 44, 12);
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+header .menu a:hover{
+    color: white;
+}
+header .menu a:hover::after{
+    width: 100%;
+}
+
+header .menu a:hover{
+    color: black;
+}
+header .menuicon{
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    transition: 4s;
+    flex-direction: row;
+}
+header .menuicon #bars{
+    color:  black;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(233, 228, 228);
+    display: none;
+    z-index: 3;
+}
+header .menuicon a,
+header .menuicon i{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgb(233, 228, 228);
+    padding: 10px;
+    margin-right: 10px;
+    font-size: small;
+}
+header .menuicon a:hover,
+header .menuicon i:hover{
+    background-color:rgb(224, 44, 12);
+    transform: rotate(360deg);
+    transition: all 0.5s;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.home{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: fit-content;
+   margin-top:10px ;
+   padding:20px;
+   
+}
+.inner{
+    margin-top:20px ;
+    padding-top:20px ;
+    padding-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.image{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    animation:float 3s linear infinite;
+}
+@keyframes float{
+    0%,100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(5rem);
+    }
+}
+.name{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.name2{
+    font-size: 80px;
+}
+.btn{
+    background-color: rgb(6, 6, 41);
+    padding: 15px 30px;
+    color: white;
+    box-shadow: 0 5px 10px 2px rgba(31, 28, 28, 1);
+    border: none;
+}
+.btn:hover{
+    padding-right: 40px;
+    background-color:peru;
+}
+
+/* ********************SLIDER ADVERT FOOD SECTION************* */
+.container{
+    max-width: 124rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.section-heading{
+    font-size: 3rem;
+    color: black;
+    padding: 2rem 0;
+}
+.tranding{
+    padding: 4rem 0;
+}
+
+.tranding .tranding-slider{
+    height: 52rem;
+    padding: 2rem 0;
+    position: relative;
+}
+.tranding-slide{
+    width: 37rem;
+    height: 42rem;
+    position: relative;
+}
+.tranding-slide .tranding-slide-img img{
+    width:37rem;
+    height: 42rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+.tranding-slide .tranding-slide-content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.tranding-slide-content .food-price{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: black;
+}
+.tranding-slide-content .tranding-slide-content-bottom{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: rgb(224, 44, 12);
+    font-weight: bolder;
+    border-radius: 1rem 1rem;
+    padding: 10px;
+}
+.food-name{
+    font-weight: 900;
+    background-color: black;
+    padding: 10px;
+    border-radius: 1rem 1rem;
+}
+.food-rating{
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+
+}
+.rating i{
+    color: red;
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right{
+    display: none;
+}
+.tranding-slider-control{
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tranding-slider-control .swiper-button-next{
+    left: 58%;
+    transform: translateX(-58%);
+}
+.tranding-slider-control .swiper-button-prev{
+    left: 70%;
+    transform: translateX(-70%);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    content: '';
+}
+.swiper-button-next,
+.swiper-button-prev{
+    width: initial;
+    height: initial;
+    font-size: 3rem;
+    color: blue;
+    display: none;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-pagination-bullet{
+    background-color: black;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: rgb(224, 44, 12);
+}
+.tranding-slider-control .slider-arrow{
+    background-color: #333;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    left: 42%;
+    transform: translateX(-42%);
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+.tranding-slider-control .slider-arrow i{
+    font-size: 1rem;
+    color: #222224;
+}
+.tranding-slider-control .slider-arrow::after{
+    content: '';
+}
+.tranding-slider-control .swiper-pagination{
+    position: relative;
+    width: 20rem;
+    bottom: 0rem;
+}
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet{
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active{
+    color: #ec994b;
+}
+.heading{
+     text-align: center;
+     font-size: 5rem;
+     padding: 1rem;
+     color: #666;
+}
+.heading span{
+    color:rgb(224, 44, 12);
+}
+
+/* *************************SEARCH SECTION************* */
+
+
+#overlay{
+    position: fixed;
+    top: -110%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    background-color: rgba(0,0,0,.7);
+    border: none;
+}
+#overlay.active{
+    top: 0;
+}
+#overlay #searchbox{
+    width: 25rem;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    font-size: 1.7rem;
+    color: white;
+    text-transform: none;
+    background: none;
+    margin-right: 10px;
+    outline: none;
+}
+#overlay #searchbox::placeholder{
+    padding: 10px;
+    color: white;
+}
+#overlay label{
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+}
+#overlay label:hover{
+    color: purple;
+}
+#overlay #close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+/* ************************MENU SECTION************* */
+
+
+.menu .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+    gap: 2.5rem;
+}
+.menu .container .boximg{
+    padding: 2.5rem;
+    padding-bottom: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: 2px solid rgba(0, 0, 0, .3);
+    overflow: hidden;
+    border-radius: .5rem;
+    cursor: pointer; 
+    text-align: center;
+}
+.imgfood{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px 50px;
+}
+.menu{
+    position: relative;
+}
+.menu .container .boximg span{
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    background:rgb(224, 44, 12);
+    color: white;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+.menu .container .boximg .content{
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: 800;
+}
+.menu .container .boximg .btn1{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 6px;
+    background: rgba(0, 0, 0, .8);
+    color: white;
+    transition: opacity 0.5s;
+    opacity: 0.25; 
+    font-family: cursive;
+    font-size: 16px;
+}
+.menu .container .boximg .btn1:hover{
+    opacity: 1;
+}
+.btn1{
+    cursor: pointer;
+}
+
+/* ***************************REVIEW SECTION************* */
+
+.heading1{
+    text-align: center;
+    font-size: 5rem;
+    padding: 1rem;
+    color: #666;
+}
+.heading1 span{
+    color:rgb(224, 44, 12);
+}
+.review .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.review .container .boxreview{
+   text-align: center;
+   padding: 2rem;
+   border: 1rem solid white;
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+   border-radius: .5rem;
+   flex: 1 1 25rem;
+}
+.boxreview img{
+    width: 200px;
+    height: 200px;
+}
+
+/* ***********ORDER SECTION***************** */
+
+
+.order{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 7rem;
+    padding-right: 4rem;
+    background-color: #fdf9f9;
+}
+.order.box{
+    flex: 1 1 25rem;
+    padding: 1rem;
+    text-align: center;
+}
+.order .box img{
+    border-radius: 50%;
+    border: 1rem solid white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    width: 200px;
+    height: 200px;
+}
+.order .box h3{
+    font-size: 16px;
+}
+ .order1{
+  padding-left: 13rem;
+  padding-right: 10rem;
+} 
+.order1 form{
+    max-width: 100rem;
+    border-radius: -5rem;
+    box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .2);
+    border: .1rem solid rgba(0, 0, 0, .2);
+    background: white;
+    padding: 1.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.order1 h1{
+    font-size: 30px;
+    text-align: center;
+}
+.order1 span{
+    color: rgb(224, 44, 12);
+}
+.order1 form .inputbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.order1 form .inputbox .input{
+    width: 45%;
+}
+.order1 form .inputbox .input span{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: grey;
+}
+.order1 form .inputbox .input input,
+.order1 form .inputbox .input textarea{
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.order1 form .inputbox .input textarea{
+    height: 20rem;
+    resize: none;
+}
+.footer .footercontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;  
+}
+.footer .footercontainer .footerbox{
+    flex: 1 1 26rem;
+}
+.footer .footercontainer .footerbox h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .footercontainer .footerbox a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    transition: all .50s ease;
+}
+.footer .footercontainer .footerbox a:hover{
+    transform: translateX(-7px);
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+.credit span{
+    color:rgb(224, 44, 12) ;
+}
+.scrollup{
+    position: fixed;
+    bottom: 2.3rem;
+    right: 2.3rem;
+}
+.scrollup i{
+    background-color: rgb(224, 44, 12);
+    color: black;
+    font-size: 1.5rem;
+    padding: 13px;
+   
+    border-radius: 50%;
+}
+.scrollup i:hover{
+    box-shadow: 0 .5rem 1rem  rgb(224, 44, 12);
+}
+    
+
+/* *****************MEDIA QUERIES************************ */
+@media  (max-width:1098px) {
+    body{
+        font-size: large;
+    }
+    header{
+        padding: 7px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    } 
+    .headerimage{
+        width:75px;
+    }
+    .name{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .name2{
+        font-size: 70px;
+    }
+    .inner{
+        padding-top: 20px;
+        margin-top: 20px; 
+        padding-right: 20px;
+    }
+    .tranding{
+        padding: 7rem 0;
+    }
+}
+@media (max-width:998px) {
+    html{
+        font-size: 55%;
+    }
+    body{
+        font-size: medium;
+    }
+    header{
+        padding: 9px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    } 
+    .headerimage{
+        width:65px;
+    }
+    header .menuicon a,
+    header .menuicon i{
+        cursor: pointer;
+        border-radius: 50%;
+        background-color:  rgb(233, 228, 228);
+        padding: 8px;
+        margin-right: 10px;
+        font-size: small;
+    }
+    .name{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .name2{
+        font-size: 60px;
+    }
+    .tranding .tranding-slider{
+        height: 50rem;
+        padding: 2rem 0;
+        position: relative;
+    }
+    .tranding{
+        padding: 7rem 0;
+    }
+    .tranding-slide-control .swiper-button-next{
+        left: 70%;
+        transform: translateX(-70px);    
+    }
+    .tranding-slide-control .swiper-button-prev{
+        left: 30%;
+        transform: translateX(-30px);    
+    }
+    .card__container{
+        max-width: 1120px;
+
+    }
+    .swiper-button-next{
+        right: -1px;
+    }
+    .swiper-button-prev{
+        left: -1px;
+    }
+}
+@media (max-width:698px) {
+    body{
+        font-size: small;
+    }
+    header{
+        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    } 
+    .home{
+        display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       height: fit-content;
+       margin-top:20px ;
+       padding:20px;
+       flex-wrap: wrap;
+    }
+    .order1 form .inputbox .input{
+        width: 100%;
+    } 
+  
+    header .menuicon #bars{
+        display: inline-block;
+    } 
+    header .menu{
+        position: absolute;
+        top: 13%; left: 0%; right: 0%;
+        background: white;
+        border-top: 2px solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+        z-index: 3;
+    }
+    header .menu.active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+    header .menu a{
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+        border: 2px solid rgba(0, 0, 0, .2);
+        border-left: 5px solidrgb(224, 44, 12);
+        background: white;
+    }
+    .order{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        background-color: #fdf9f9;
+    }
+    .order1{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    } 
+    
+    .tranding .tranding-slider{
+        height: 45rem;
+    }
+    .card__content{
+        margin-inline: 3rem;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: block;
+    }
+
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    .order1 form .inputbox .input{
+        width: 100%;
+    }
+    .footer .credit{
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+        padding-top: 2.5rem;
+        font-size: 1.5rem;
+        color: #333;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+    }
+    .image{
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        margin-bottom: 40px;
+    }
+    .order1{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    } 
+    header .food{
+        font-size: 20px;
+        color: rgb(82, 122, 82);
+        font-weight: 800
+    }
+    .tranding-slide{
+        width: 28rem ; 
+        height: 16rem;
+    }
+    .tranding-slide .tranding-slide-img img{
+        width: 28rem ; 
+        height: 16rem;
+    }
+    .tranding-slide-control .swiper-button-next{
+        left: 80%;
+        transform: translateX(-80px);    
+    }
+    .tranding-slide-control .swiper-button-prev{
+        left: 20%;
+        transform: translateX(-20px);    
+    }
+    .card__data{
+        padding: 1rem;
+    }
+}
+       
+    
+

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <title>FOOD APP</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="food"><i class="fas fa-utensils"></i> GAIA</a>
+        <div class="menu" > 
+        <a href="#home">Home</a>
+        <a href="#bestSell">Specialty</a>
+        <a href="#menu">Menu</a>
+        <a href="#review">Review</a>
+        <a href="#order">Order</a>
+        </div>
+       
+        <div class="menuicon">  
+            <i class="fas fa-bars" id="bars"></i>   
+            <i class= "fas fa-search" id="search-icon"></i>
+            <a href="#"class="fas fa-heart"></a>
+            <a href="#"class="fas fa-shopping-cart"></a>
+        </div>
+
+    </header>
+    <form action="" id="overlay">
+        <input type="search" placeholder="Search Here..." id="searchbox">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+      <section class="home" id="home">
+        <div class="inner">
+            <h1 class="name2">Savor your own Happiness</h1>
+            <br>
+            <p>Thrive to eat healthy happiness, and by healthy,i mean our Authentic and Delicious Nigerian cuisine. 
+            <br> If you are not obsessed with our food,then we are ready to refund you.</p>    
+            <br>
+           <button class="btn">Order Now</button>
+        </div>
+           <img src="img/chicken wings.avif" class="image" alt="chicken">
+    </section>
+
+    
+
+    <section id="bestSell" class="tranding">
+        <div class="container">
+            <h1 class="heading">Our <span>Specialty</span></h1>
+            <h3 class="text-center section-heading">Trending food</h3>
+        </div>
+        <div class="container">
+            <div class="swiper tranding-slider">
+                    <div class="swiper-wrapper">
+                        <!-- slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="img/seafood.jpg" class="bannerimg" alt="foodapp">
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$20</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">Seafood Okro</h2>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="img/IMG_E7275.JPG"   class="bannerimg"  alt="foodapp">
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$20</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">Efo-riro</h2>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="img/IMG_E7293.JPG"  class="bannerimg"  alt="foodapp">
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$20</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">Local Rice</h2>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="img/IMG_E7290.JPG"  class="bannerimg"  alt="foodapp">
+                            </div>
+                            <div class="tranding-slide-content">
+                                <h1 class="food-price">$20</h1>
+                                <div class="tranding-slide-content-bottom">
+                                    <h2 class="food-name">Ofada Rice</h2>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+                    </div>
+                    <div class="tranding-slider-control">
+                         <!-- <div class="swiper-button-prev">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fas fa-arrow-right"></i>
+                        </div> -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+            
+
+    <section class="menu" id="menu">
+        <h1 class="heading">Our <span>Menu</span></h1>
+        <div class="container">
+            
+            
+            <div class="boximg">
+                <span>$10.99</span>
+                <img src="img/IMG_E7272.JPG" class="imgfood" alt="okro">
+                 <div class="content">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>EGUSI SOUP</h3>
+                    <button class="btn1">Order</button>
+            </div>
+
+            <div class="boximg">
+                <span>$15.99</span>
+                <img src="img/IMG_E7273.JPG" class="imgfood" alt="okro">
+                <div class="content">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>BANGA SOUP</h3>
+                    <button class="btn1">Order</button>
+            </div>
+            
+
+            <div class="boximg">
+                <span>$14.99</span>
+                <img src="img/IMG_E7276.JPG"  class="imgfood"  alt="okro">
+                <div class="content">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>OGBONO SOUP</h3>
+                    <button class="btn1">Order</button>
+            </div>
+
+            <div class="boximg">
+                <span>$18.99</span>
+                <img src="img/IMG_E7277.JPG"  class="imgfood"  alt="okro">
+                <div class="content">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>GBEGIRI AND EWEDU SOUP</h3>
+                    <button class="btn1">Order</button>
+            </div>
+
+            <div class="boximg">
+                <span>$19.99</span>
+                <img src="img/IMG_E7281.JPG"  class="imgfood"  alt="okro">
+                <div class="content">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>BLACK SOUP</h3>
+                    <button class="btn1">Order</button>
+            </div>
+
+            <div class="boximg">
+                <span>$22.99</span>
+                <img src="img/IMG_E7274.JPG"  class="imgfood"  alt="okro">
+                <div class="content">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>OFADA RICE ND SAUCE</h3>
+                    <button class="btn1">Order</button>
+            </div>
+
+            <div class="boximg">
+                <span>$13.99</span>
+                <img src="img/IMG_E7287.JPG"  class="imgfood"  alt="okro">
+                <div class="content">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>JOLLOF RICE</h3>
+                    <button class="btn1">Order</button>
+            </div>
+
+            <div class="boximg">
+                <span>$10.99</span>
+                <img src="img/IMG_E7288.JPG"  class="imgfood"  alt="okro">
+                <div class="content">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>PEPPERED RICE</h3>  
+                    <button class="btn1">Order</button>
+            </div>
+
+            <div class="boximg">
+                <span>$18.99</span>
+                <img src="img/IMG_E7292.JPG"  class="imgfood"  alt="okro">
+                <div class="content">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>FRIED RICE</h3>
+                    <button class="btn1">Order</button>
+            </div>
+      
+        </div>
+    </section>
+       
+    <section class="review" id="review">
+        <h1 class="heading">Our Customers <span>Reviews</span></h1>
+        <div class="container">
+            <div class="boxreview">
+                <img src="img/black beauty.jpg" alt="">
+                <h1>Diamond Reece</h1>
+            
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Took me right back to my motherland,Nigeria. Great ambiance and great service, this is the best new home-cooked meal in town.</p>
+            </div>
+            <div class="boxreview">
+                <img src="img/white woman smiling.jpg" alt="">
+                <h1>Felicia Williams</h1>
+            
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            
+                <p>Brings back memories when i went to Nigeria,Africa. the delicious meals and culture all in one taste. Excellent Service.</p>
+            </div>
+            <div class="boxreview">
+                <img src="img/black man.jpg" alt="">
+                <h1>Charles Dapo</h1>
+            
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            
+                <p>Took me right back to my motherland,Nigeria. Great ambiance and great service, this is the best new home-cooked meal in town.</p>
+            </div>
+
+            <div class="boxreview">
+                <img src="img/black guy2.jpg" alt="">
+                 <h1>David Igwe</h1>
+           
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Took me right back to my motherland,Nigeria. Great ambiance and great service, this is the best new home-cooked meal in town.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <h1 class="heading1">How <span>to Order</span></h1>
+    <section class="order" id="order">
+        
+        <div class="order" id="order"> 
+            <div class="box">
+                <img src="img/food.avif" alt="">
+                <h3>Choose your favorite food</h3>
+            </div>
+            <div class="box">
+                <img src="img/cash.png" alt="">
+                <h3>Easy payments methods</h3>
+             </div>
+            <div class="box">
+                <img src="img/del.png" alt="">
+                <h3>Free and Fast delivery</h3>
+            </div>
+            
+            <div class="box">
+                <img src="img/eat2.jfif" alt="">
+                <h3>and finally, enjoy your food</h3>
+             </div>
+            </div>
+        </section>    
+      <br>
+        <div class="order1" id="order">
+            <h1>Order <SPan>HERE</SPan>!!!</h1>
+
+            <form action="">
+                <div class="inputbox">
+                    <div class="input">
+                        <span>Your Name</span>
+                         <input type="text" placeholder="Enter Your Name">
+                    </div>
+            
+                    <div class="input">
+                        <span>Your Number</span>
+                        <input type="text" placeholder="Enter Your Number">
+                 </div>
+                </div>
+
+                <div class="inputbox">
+                    <div class="input">
+                        <span>Your Order</span>
+                        <input type="text" placeholder="Enter Food Name">
+                    </div>
+                    <div class="input">
+                        <span>Additional Order</span>
+                        <input type="text" placeholder="Extra With Food">
+                    </div>
+                </div>
+
+                <div class="inputbox">
+                    <div class="input">
+                        <span>How Much</span>
+                        <input type="number" placeholder="How Many Orders">
+                    </div>
+                    <div class="input">
+                        <span>Date And Time</span>
+                        <input type="datetime-local">
+                    </div>
+                </div>
+
+                <div class="inputbox">
+                    <div class="input">
+                        <span>Your Address</span>
+                        <textarea name="" placeholder="Enter Your Address" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input">
+                        <span>Your Message</span>
+                        <textarea name="" placeholder="Enter Your Message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+              <input type="submit" value="Order Now!!" class="btn">
+            </form>
+        </div>
+    <section class="footer">
+
+        <div class="footercontainer">
+            <div class="footerbox">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#bestsell">Specialty</a>
+                <a href="#menu">Menu</a>
+                <a href="#review">Review</a>
+                <a href="#order">Order</a>
+            </div>
+
+            <div class="footerbox">
+                <h3>Extra Links</h3>
+                <a href="#">My account</a>
+                <a href="#">My order</a>
+                <a href="#">My order</a>
+            </div>
+
+            <div class="footerbox">
+                <h3>Location</h3>
+                <a href="#">India</a>
+                <a href="#">Nigeria</a>
+                <a href="#">USA</a>
+                <a href="#">Canada</a>
+                <a href="#">Ghana</a>
+            </div>
+
+            <div class="footerbox">
+                <h3>Contact Info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">Gaia@gmail.com</a>
+                <a href="#">Nigeria,lagos-404044</a>
+            </div>
+        </div>
+
+        <div class="credit">Created by <span>Cup Of Coco</span> | all rights reserved</div>
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script type="text/javascript"  src="index.js"></script>
+</body>
+</html>
